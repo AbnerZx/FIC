@@ -1,2 +1,0 @@
-# FIC
-Exercicios FB

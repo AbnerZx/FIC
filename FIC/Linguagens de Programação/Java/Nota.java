@@ -9,7 +9,7 @@ class Programa {
         double nota1 = 0, nota2 = 0, media = 0;
 
         // Criação de um objeto Scanner para ler a entrada do usuário.
-        Scanner s = new Scanner(System.in);
+        try (Scanner s = new Scanner(System.in)) {
 
         // Solicita ao usuário que digite as notas.
         System.out.print("Digite a primeira e a segunda nota: ");
@@ -22,7 +22,7 @@ class Programa {
         
         // Lê a segunda nota digitada pelo usuário e a armazena na variável "nota2".
         nota2 = s.nextDouble();
-
+        }
         // Calcula a média das duas notas.
         media = (nota1 + nota2) / 2;
 

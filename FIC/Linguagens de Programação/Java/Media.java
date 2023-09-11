@@ -10,12 +10,12 @@ public class Media {
         double media;
 
         //construção de objeto para entrada de teclado
-        Scanner teclado = new Scanner(System.in);
+        try (Scanner teclado = new Scanner(System.in)) {
 
         //entrada de dados
         System.out.print("Escreva o primeiro número: ");
-       // num1 = objeto.nextInt();
-       num1 = teclado.nextInt();
+        // num1 = objeto.nextInt();
+        num1 = teclado.nextInt();
 
         System.out.print("Escreva o segundo número: ");
         num2 = teclado.nextInt();
@@ -26,5 +26,6 @@ public class Media {
 
         //resultado
         System.out.println("a média de "+num1+" e "+num2+" é: "+media);
+        }
     }
 }

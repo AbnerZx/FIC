@@ -19,10 +19,10 @@ class Index {
         System.out.println("Teste Java");
         */
         String nome;
-        try (Scanner zinho = new Scanner(System.in)) {
+        Scanner zinho = new Scanner(System.in);
         System.out.print("Escreva o seu nome: ");
         nome = zinho.next();
         System.out.println("O seu nome é "+nome);
-        }
+        zinho.close();
     }
 }

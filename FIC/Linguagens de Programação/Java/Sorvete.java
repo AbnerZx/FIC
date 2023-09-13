@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 class Sorvete {
     public static void main(String[] args) {
-        int sabor = 0;
-        int bolas = 0;
-        int opcao = 0;
+        int sabor;
+        int bolas;
+        int opcao;
 
         Scanner sorvete = new Scanner(System.in);
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <header>
+        <figure class="logo-container">
+            <img src="https://cdn-user-icons.flaticon.com/78792/78792753/1696287829610.svg?token=exp=1696432810~hmac=14f54ff65da6b34a084c029d8d7754e8"
+                alt="" class="logo">
+        </figure>
+        <figure class="menu-container">
+            <img src="https://cdn-user-icons.flaticon.com/78792/78792753/1696373292909.svg?token=exp=1696432810~hmac=fc76abac166eb6bfb75f0ace16cac8ef"
+                alt="" class="menu-bar" onclick="abre()">
+            <nav class="menu-list">
+                <p id="close" onclick="fecha()">X</p>
+                <a href="" class="item">Home</a>
+                <a href="" class="item">Contato</a>
+                <a href="" class="item">Suporte</a>
+                <a href="" class="item">Sair</a>
+            </nav>
+        </figure>
+    </header>
+    <main>
+        <div class="form-container">
+            <input type="text" name="" id="nome" placeholder="Nome...">
+            <input type="password" name="" id="senha" placeholder="Senha...">
+            <input type="button" id="cadastrar" value="Cadastrar" onclick="cadastrar()">
+        </div>
+    </main>
+    <script src="nav.js"></script>
+</body>
+
+</html>

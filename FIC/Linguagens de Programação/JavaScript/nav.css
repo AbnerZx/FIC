@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 70px;
+    background: rgb(9, 107, 219);
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .menu-bar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10%;
+}
+.menu-container{
+    border-radius: 50%;
+}
+.menu-list{
+   width: 0;
+   height: 100%;
+   overflow: hidden; 
+   transition: width 0.5s;
+   background:rgb(9, 107, 219);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   position: fixed;
+   top:0;
+   right:0;
+}
+#close, .item{
+    color: white;
+}
+#close{
+    width: 100%;
+    text-align: right;
+    padding-right: 30px;
+}
+main{
+    padding: 100px 0;
+    background-image: url(https://raw.githubusercontent.com/AbnerZx/img/main/cherry-blossom-forest-snowy-mountain-scenery-starry-night-sky-ai-4k-wallpaper-uhdpaper.com-742%401%40l.jpg?token=GHSAT0AAAAAACH3YKG7SFTNMNX357OT2A4GZI5WCUQ);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container{
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#nome, #senha{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+#cadastrar{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(9, 107, 219);
+    color: white;
+    box-shadow: 2px 2px 4px black;
+}
+#cadastrar:hover{
+    background: rgb(2, 47, 97);
+    cursor: pointer;
+}
+.item{
+    text-decoration: none;
+}
